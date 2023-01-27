@@ -33,14 +33,17 @@ nav{
 }
 nav a { 
 	padding-top: 5px; 
-	background: blue; 
-	color: black; 
+	background:rgb(51 110 199 / 92%) ; 
+	color: white; 
 	margin-top:14px;
 	margin-left: 2px;
-	width: 4em;
+	width: 5em;
 	display: inline-block;
     margin-right: 6px;
     text-decoration: none;
+	text-align: center;
+	border:2px solid black;
+	box-shadow: 4px 4px #808080fc
   } 
 
   a:hover { 
