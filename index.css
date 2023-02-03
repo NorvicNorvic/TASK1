@@ -31,13 +31,14 @@ nav{
 	position: relative;
     top: 10px;
 }
+
 nav a { 
 	padding-top: 5px; 
 	background:rgb(51 110 199 / 92%) ; 
 	color: white; 
 	margin-top:14px;
 	margin-left: 2px;
-	width: 5em;
+	width: 6em;
 	display: inline-block;
     margin-right: 6px;
     text-decoration: none;
@@ -46,7 +47,7 @@ nav a {
 	box-shadow: 4px 4px #808080fc
   } 
 
-  a:hover { 
+  nav a:hover { 
 	background: green;
 	box-shadow: 0px; 
   } 
@@ -60,6 +61,12 @@ nav a {
 	text-align: center;
 	border: 1px solid ;
   }
+
+  main{
+	width: 100%;
+	height: 59em;
+  }
+
   .Logo{
 	width: 6em;
 	height: 6em;
@@ -86,3 +93,61 @@ nav a {
 	margin-left: 10em;
 	margin-top: -5em;
   }
+	
+	footer {
+    width:100%;
+    height:20.6em;;
+	background-image:url("Assets/estadio.png");
+	background-repeat: no-repeat;
+	background-size:cover;
+    color: white;
+  }
+
+  footer h3{
+	text-align: center;
+	padding-top:1em;
+  }
+
+  footer ul li{
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	justify-content:center;
+	margin: 3px;
+  }
+
+ #EnlacesFooter a{
+	background: rgb(51 110 199 / 92%);
+    color: white;
+    width: 7em;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 4px 4px #808080fc;
+    position: relative;
+    top: 5em;
+    margin-inline: 137px;
+}
+
+ 
+ #EnlacesFooter a:hover{
+	background: green;
+	box-shadow: 0px; 
+} 
+
+  #listaFoot a:hover{
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+	position: relative;
+	cursor: default;
+	box-shadow: 
+		inset 0 0 0 0 rgba(233, 60, 13, 0.4),
+		inset 0 0 0 16px green ,
+		0 1px 2px rgba(0,0,0,0.1);
+	transition: all 0.4s ease-in-out;
+} 
+   
+  
+  
