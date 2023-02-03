@@ -1,154 +1,161 @@
-*{
-	margin:0; 
-	padding:0;
-	font-family:Comic Sans MS,Arial,Verdana;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Comic Sans MS, Arial, Verdana;
 	box-sizing: border-box;
 }
 
-#ContenedorCentral{
-	width:800px;
-	height:1800px;
-	padding:1px;
-	margin:15px auto;
-	margin-bottom:15px;
+#ContenedorCentral {
+	width: 800px;
+	height: 1911px;
+	padding: 1px;
+	margin: 15px auto;
+	margin-bottom: 15px;
 	border-style: double;
 }
 
-header{
-	width:100%;
-	height:500px;
-	margin-top:15px;
+header {
+	width: 100%;
+	height: 500px;
+	margin-top: 15px;
 }
 
-header h1{
-	margin-left:10px;
-	float:left;
+header h1 {
+	margin-left: 10px;
+	float: left;
 	font-size: 30px;
 }
 
-nav{
-    float: right;
+nav {
+	float: right;
 	position: relative;
-    top: 10px;
+	top: 10px;
 }
 
-nav a { 
-	padding-top: 5px; 
-	background:rgb(51 110 199 / 92%) ; 
-	color: white; 
-	margin-top:14px;
+nav a {
+	padding-top: 5px;
+	background: rgb(51 110 199 / 92%);
+	color: white;
+	margin-top: 14px;
 	margin-left: 2px;
 	width: 6em;
 	display: inline-block;
-    margin-right: 6px;
-    text-decoration: none;
+	margin-right: 6px;
+	text-decoration: none;
 	text-align: center;
-	border:2px solid black;
+	border: 2px solid black;
 	box-shadow: 4px 4px #808080fc
-  } 
-
-  nav a:hover { 
-	background: green;
-	box-shadow: 0px; 
-  } 
- 
-  .imgPrinc{
-	width:100%;
-    height:415px;
 }
 
-  .titulo{
-	text-align: center;
-	border: 1px solid ;
-  }
+nav a:hover {
+	background: green;
+	box-shadow: 0px;
+}
 
-  main{
+.imgPrinc {
 	width: 100%;
-	height: 59em;
-  }
+	height: 415px;
+}
 
-  .Logo{
+.titulo {
+	text-align: center;
+	border: 1px solid;
+}
+
+main {
+	width: 100%;
+	height: 66em;
+}
+
+.Logo {
 	width: 6em;
 	height: 6em;
 	border: 1px solid black;
 	margin-top: 3em;
 	margin-left: 1em;
-  }
+}
 
-  #Lista{
+#Lista {
 	margin-left: 10em;
 	margin-top: -8em;
-  }
-  li{
+}
+
+li {
 	margin-top: 30px;
 	list-style: none;
 
-  }
+}
 
-  p{
-	margin-left:1em ;
-  }
+p {
+	margin-left: 1em;
+}
 
-  #parrafo{
+#parrafo {
 	margin-left: 10em;
 	margin-top: -5em;
-  }
-	
-/* MAIN */
-  /* TABLA */
+}
 
-  h2{
+/* MAIN */
+/* TABLA */
+
+h2 {
 	text-align: center;
 	margin-top: 0em;
-  }
+}
 
 
-.LogoInf{
-	width: 26%;
-	height: 11em;
+.LogoInf {
+	width: 35%;
+    height: 14em;
     position: relative;
-	left: 39%;
+    left: 34%;
 
 }
 
-  table {
+table {
 	width: 90%;
-	margin:auto;
-	
- }
- th, td {
+	margin: auto;
+
+}
+
+th,
+td {
 	width: 25%;
 	height: 2em;
- }
+}
 
- table th {
-	background-color: green; 
+table th {
+	background-color: green;
 }
 
 table tr {
-	background-color: rgb(138, 231, 135);}
+	background-color: rgb(138, 231, 135);
+}
 
+h4 {
+	text-align: center;
+}
 
- /* SECTION */
+/* SECTION */
 
- .imgMensaje{
+.imgMensaje {
 	width: 58%;
 	height: 3em;
-    position: relative; 
+	position: relative;
 	margin-left: 9em;
-	top:-2em;
+	top: -2em;
 }
 
-.imgFlecha{
-width: 7em;
-height: 7em;
-transform: rotate(150deg);
-position: relative;
-top:6em;
-right: 3em;
+.imgFlecha {
+	width: 7em;
+	height: 7em;
+	transform: rotate(150deg);
+	position: relative;
+	top: 6em;
+	right: 3em;
 }
 
-section ul li{
+section ul li {
 	list-style-type: disc;
 	margin-left: 3em;
 	margin-top: 2em;
@@ -156,61 +163,87 @@ section ul li{
 
 /* FOOTER */
 
-	footer {
-    width:100%;
-    height:20.6em;;
-	background-image:url("Assets/estadio.png");
+footer {
+	width: 100%;
+	height: 20.6em;
+	;
+	background-image: url("Assets/estadio.png");
 	background-repeat: no-repeat;
-	background-size:cover;
-    color: white;
-  }
-
-  footer h3{
-	text-align: center;
-	padding-top:1em;
-  }
-
-  footer ul li{
-	display: flex;
-	flex-direction: column;
-    align-items: center;
-	justify-content:center;
-	margin: 3px;
-  }
-
- #EnlacesFooter a{
-	background: rgb(51 110 199 / 92%);
-    color: white;
-    width: 7em;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    border: 2px solid black;
-    box-shadow: 4px 4px #808080fc;
-    position: relative;
-    top: 5em;
-    margin-inline: 137px;
+	background-size: cover;
+	color: white;
 }
 
- 
- #EnlacesFooter a:hover{
-	background: green;
-	box-shadow: 0px; 
-} 
+footer h3 {
+	text-align: center;
+	padding-top: 1em;
+}
 
-  #listaFoot a:hover{
+footer ul li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 3px;
+}
+
+#EnlacesFooter a {
+	background: rgb(51 110 199 / 92%);
+	color: white;
+	width: 7em;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	border: 2px solid black;
+	box-shadow: 4px 4px #808080fc;
+	position: relative;
+	top: 5em;
+	margin-inline: 137px;
+}
+
+
+#EnlacesFooter a:hover {
+	background: green;
+	box-shadow: 0px;
+}
+
+#listaFoot a:hover {
 	width: 3em;
 	height: 3em;
 	border-radius: 50%;
 	position: relative;
 	cursor: default;
-	box-shadow: 
+	box-shadow:
 		inset 0 0 0 0 rgba(233, 60, 13, 0.4),
-		inset 0 0 0 16px green ,
-		0 1px 2px rgba(0,0,0,0.1);
+		inset 0 0 0 16px green,
+		0 1px 2px rgba(0, 0, 0, 0.1);
 	transition: all 0.4s ease-in-out;
-} 
-   
-  
+}
 
+/* RULES */
 
+#mainRules {
+	background-image: url(Assets/marcaAgua.png);
+	background-repeat: no-repeat;
+	background-size: 40em;
+	background-position: 3em 11em;
+	margin:1em;
+	text-align: justify;
+}
+
+#mainRules h2{
+	text-align: center;
+}
+
+#mainRules h3{
+	text-align:left;
+}
+
+#mainRules ol li{
+	list-style-type: decimal-leading;
+	margin-left: 1em;
+}
+
+#listaOrdenada ol li{
+	list-style-type: lower-latin;
+
+}
