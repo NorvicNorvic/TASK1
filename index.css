@@ -247,3 +247,7 @@ footer ul li {
 	list-style-type: lower-latin;
 
 }
+#listaUl li{
+	list-style:circle;
+    margin-left: 3em;
+}
