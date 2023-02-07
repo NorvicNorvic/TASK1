@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios y mapas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formularios y mapas</h1>
+    <form action="./show_data.html" method="get">
+        <fieldset>
+            <label for="nombre">Nombre y Apellido: <span style="color:red;">*</span></label>
+            <input required type="text" name="nombre" id="nombre" placeholder="Pepito Juarez">
+        </fieldset>
+        <fieldset>
+            <label>
+                Edad:
+                <input name="edad" type="number" max="100" min="1" placeholder="1-100">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>
+                Fecha de nacimiento: 
+                <input type="date" name="" id="">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Email</legend>
+            <input type="email" name="email">
+            <!-- <label>
+                Email:
+            </label> -->
+        </fieldset>
+        <fieldset>
+            <label>
+                Color Favorito:
+                <input type="color" name="colorFavorito">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Colores</legend>
+            <label>
+                Amarillo
+                <input type="checkbox" name="color1" value="Amarillo">
+            </label>
+            <label>
+                Azul
+                <input type="checkbox" name="color2" value="Azul">
+            </label>
+            <label>
+                Rojo
+                <input type="checkbox" name="color3" value="Rojo">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Tamaño</legend>
+            <label>
+                S
+                <input type="radio" name="tamanio" value="S">
+            </label>
+            <label>
+                M
+                <input checked type="radio" name="tamanio" value="M">
+            </label>
+            <label>
+                L
+                <input type="radio" name="tamanio" value="L">
+            </label>
+            <label>
+                XL
+                <input type="radio" name="tamanio" value="XL">
+            </label>
+        </fieldset>
+        <!-- <label for="nacionalidad">Nacionalidad</label> -->
+        <select name="nacionalidad" id="nacionalidad">
+            <option value="" disabled selected>Nacionalidad...</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Chile">Chile</option>
+            <option value="Colombia">Colombia</option>
+        </select>
+        <input type="submit" value="Enviar datos">
+    </form>
+    <h2><span style="color:red;">*</span> Estos campos son obligatorios</h2>
+    <h2>Mapa</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26327.99294963738!2d-58.59335468438603!3d-34.426777503511666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5a2d0ddb9b1%3A0x2c1a974c67cba1e4!2sTigre%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1675451636144!5m2!1ses!2sar" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h2>Casados con hijos</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BE1wdWbSqAU?start=1171" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h2>Twitt de la semana</h2>
+    <blockquote class="twitter-tweet"><p lang="es" dir="ltr">El Pentágono asegura que es probable que el globo espía de China sobrevuele por Estados Unidos durante varios días 🙃<a href="https://t.co/SI8nDSPKvx">pic.twitter.com/SI8nDSPKvx</a></p>&mdash; Emmanuel Rincón (@EmmaRincon) <a href="https://twitter.com/EmmaRincon/status/1621589153593843715?ref_src=twsrc%5Etfw">February 3, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <h2>Dia de pezca</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d84719.98497691241!2d-74.20184079995813!3d20.211928970876368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1675452242222!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
