@@ -1,96 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios y mapas</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Register Formulary</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
-    <h1>Formularios y mapas</h1>
+
+<body id="bodyReg">
+    <h1>Register Formulary</h1>
     <form action="./show_data.html" method="get">
+
         <fieldset>
-            <label for="nombre">Nombre y Apellido: <span style="color:red;">*</span></label>
-            <input required type="text" name="nombre" id="nombre" placeholder="Pepito Juarez">
+            <span style="color:red;">*</span> <label for="first_name">Player´s first-name: </label>
+            <input required type="text" name="first_name" id="first_name" placeholder="Peter">
+
+            <label for="las_name">Last name: <span style="color:red;">*</span></label>
+            <input required type="text" name="last_name" id="last_name" placeholder="Juarez">
         </fieldset>
+
+
         <fieldset>
-            <label>
-                Edad:
-                <input name="edad" type="number" max="100" min="1" placeholder="1-100">
-            </label>
+            <span style="color:red;">*</span><label for="street_adress">Street adress:</label>
+            <input required type="text" name="street_adress" id="street_adress"
+                placeholder="Calle, número, piso, puerta">
         </fieldset>
+
+
         <fieldset>
-            <label>
-                Fecha de nacimiento: 
-                <input type="date" name="" id="">
-            </label>
+            <span style="color:red;">*</span> <label for="city">City: </label>
+            <input required type="text" name="city" id="city" placeholder="Detroit">
+
+            <label for="zip_code">Zip Code: </label>
+            <input required type="text" name="zip_code" id="zip_code" placeholder="48127">
         </fieldset>
+
+
         <fieldset>
-            <legend>Email</legend>
-            <input type="email" name="email">
-            <!-- <label>
-                Email:
-            </label> -->
+            <legend>Birth Date</legend>
+            <label><input type="date" name="" id=""></label>
         </fieldset>
+
+
         <fieldset>
+            <legend>Gender</legend>
             <label>
-                Color Favorito:
-                <input type="color" name="colorFavorito">
-            </label>
-        </fieldset>
-        <fieldset>
-            <legend>Colores</legend>
-            <label>
-                Amarillo
-                <input type="checkbox" name="color1" value="Amarillo">
+                Female
+                <input type="radio" name="gender" value="Female">
             </label>
             <label>
-                Azul
-                <input type="checkbox" name="color2" value="Azul">
-            </label>
-            <label>
-                Rojo
-                <input type="checkbox" name="color3" value="Rojo">
-            </label>
-        </fieldset>
-        <fieldset>
-            <legend>Tamaño</legend>
-            <label>
-                S
-                <input type="radio" name="tamanio" value="S">
-            </label>
-            <label>
-                M
-                <input checked type="radio" name="tamanio" value="M">
-            </label>
-            <label>
-                L
-                <input type="radio" name="tamanio" value="L">
-            </label>
-            <label>
-                XL
-                <input type="radio" name="tamanio" value="XL">
+                Male
+                <input type="radio" name="gender" value="Male">
             </label>
         </fieldset>
-        <!-- <label for="nacionalidad">Nacionalidad</label> -->
-        <select name="nacionalidad" id="nacionalidad">
-            <option value="" disabled selected>Nacionalidad...</option>
-            <option value="Argentina">Argentina</option>
-            <option value="Bolivia">Bolivia</option>
-            <option value="Chile">Chile</option>
-            <option value="Colombia">Colombia</option>
-        </select>
+
+
+        <fieldset>
+            <legend>Grade</legend>
+            <label>
+                <input type="radio" name="grade" value="Pre_School">
+                Pre-School
+            </label>
+            <label>
+                <input type="radio" name="grade" value="1sp">
+                <sup>1sp</sup>
+            </label>
+            <label>
+                <input type="radio" name="grade" value="2nd">
+                <sup>2nd</sup>
+            </label>
+            <label>
+                <input type="radio" name="grade" value="3rd">
+                <sup>3rd</sup>
+            </label>
+            <label>
+                <input type="radio" name="grade" value="4th">
+                <sup>4th</sup>
+            </label>
+            <label>
+                <input type="radio" name="grade" value="5th">
+                <sup>5th</sup>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label>Which elementary school do you live near?</label>
+            <select name="school" id="school">
+                <option value="" disabled selected>Closest school</option>
+                <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                <option value="Greenbay">Greenbay</option>
+                <option value="Howard A Yeager">Howard A Yeager</option>
+                <option value="Marjorie P Hart">Marjorie P Hart</option>
+                <option value="North Elementary">North Elementary</option>
+                <option value="South Elementary">South Elementary</option>
+            </select>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>What position(s) do you normally play? (Check all that apply)</legend>
+            <label>
+                <input type="checkbox" name="position1" value="Forward">
+                Forward
+            </label>
+            <label>
+                <input type="checkbox" name="position2" value="Defense">
+                Defense
+            </label>
+            <label>
+                <input type="checkbox" name="position3" value="Midfield">
+                Midfield
+            </label>
+            <label>
+                <input type="checkbox" name="position4" value="Goalkeeper">
+                Goalkeeper
+            </label>
+        </fieldset>
+
+
+
+
+        <fieldset>
+            <legend><span style="color:red;">*</span>Uniform Size</legend>
+            <label>
+                <input type="radio" name="size" value="Youth Small">
+                Youth Small
+            </label>
+            <label>
+                <input type="radio" name="size" value="Youth Medium">
+                Youth Medium
+            </label>
+            <label>
+                <input type="radio" name="size" value="Youth Large">
+                Youth Large
+            </label>
+            <label>
+                <input type="radio" name="size" value="Small">
+                Small
+            </label>
+            <label>
+                <input type="radio" name="size" value="Medium">
+                Medium
+            </label>
+            <label>
+                <input type="radio" name="size" value="Large">
+                Large
+            </label>
+            <label>
+                <input type="radio" name="size" value="Extra-Large">
+                Extra-Large
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <div id="scroll">
+                <legend>
+                    <h3>Permission to Play</h3>
+                </legend>
+
+                <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all
+                    the
+                    rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury
+                    associated with hockey and in consideration for the “League" accepting the registrant for its hockey
+                    programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their
+                    employees
+                    and associated personnel and voIunteers,incIuding the facilities used for practices and games,
+                    against
+                    any claim by or on behalf of the registrant as a result of the registrant's participation in the
+                    programand/orbeing transported to or from MDHL sponsored activities,which transportation
+                    By entering my name below, I herebyagree andauthorizethe above.In addition, by signing below, lalso
+                    acknowledge that I have read the cancellation policy and agree to its terms. </p>
+            </div>
+            <p>Parent/GuardianSignature: <input type="text" name="Parent_GuardianSignature" /></p>
+
+            <p>Date: <input type="text" name="date" /></p>
+
+
+        </fieldset>
+
         <input type="submit" value="Enviar datos">
     </form>
+
     <h2><span style="color:red;">*</span> Estos campos son obligatorios</h2>
-    <h2>Mapa</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26327.99294963738!2d-58.59335468438603!3d-34.426777503511666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5a2d0ddb9b1%3A0x2c1a974c67cba1e4!2sTigre%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1675451636144!5m2!1ses!2sar" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <h2>Casados con hijos</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/BE1wdWbSqAU?start=1171" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <h2>Twitt de la semana</h2>
-    <blockquote class="twitter-tweet"><p lang="es" dir="ltr">El Pentágono asegura que es probable que el globo espía de China sobrevuele por Estados Unidos durante varios días 🙃<a href="https://t.co/SI8nDSPKvx">pic.twitter.com/SI8nDSPKvx</a></p>&mdash; Emmanuel Rincón (@EmmaRincon) <a href="https://twitter.com/EmmaRincon/status/1621589153593843715?ref_src=twsrc%5Etfw">February 3, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <h2>Dia de pezca</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d84719.98497691241!2d-74.20184079995813!3d20.211928970876368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1675452242222!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    
 </body>
+
 </html>
