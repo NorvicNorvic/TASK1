@@ -112,24 +112,29 @@ h2 {
 
 }
 
-table {
+.normal{
 	width: 90%;
 	margin: auto;
+	border: 1px solid #000;
 
 }
-
-th,
-td {
+table td {
 	width: 25%;
 	height: 2em;
+
 }
 
 table th {
 	background-color: green;
+	width: 25%;
+	height: 2em;
+	border: 1px solid #000;
+
 }
 
 table tr {
 	background-color: rgb(138, 231, 135);
+
 }
 
 h4 {
@@ -243,11 +248,11 @@ footer ul li {
 	margin-left: 1em;
 }
 
-#listaOrdenada ol li{
+ol#listaOrdenada > li{
 	list-style-type: lower-latin;
 
 }
-#listaUl li{
+#final{
 	list-style:circle;
     margin-left: 3em;
 }
