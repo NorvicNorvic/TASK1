@@ -5,13 +5,11 @@
 	box-sizing: border-box;
 }
 
-#ContenedorCentral {
-	width: 800px;
-	height: 1932px;
-	padding: 1px;
-	margin: 15px auto;
-	margin-bottom: 15px;
-	border-style: double;
+body {
+	border: 10px;
+	border-style:double;
+	background-color: rgb(233, 243, 247);
+
 }
 
 header {
@@ -22,17 +20,37 @@ header {
 
 header h1 {
 	margin-left: 10px;
-	float: left;
+	text-align: center;
 	font-size: 30px;
 }
 
-nav {
-	float: right;
-	position: relative;
-	top: 10px;
+nav{
+	padding: 5px;
+	display:flex;
+	justify-content: space-around;
 }
 
-nav a {
+.nav-enlace{
+	display: inline-block;
+	background: rgb(51 110 199 / 92%);
+	padding: 5px;
+	color: white;
+	text-decoration: none;
+	width: 6.5em;
+	margin: 4px;
+	text-align: center;
+	border: 2px solid black;
+	box-shadow: 4px 4px #808080fc;
+	margin-bottom: 1em;
+}
+
+.nav-enlace:hover{
+	background: green;
+	box-shadow: 0px;
+
+}
+
+.nav-enlace a {
 	padding-top: 5px;
 	background: rgb(51 110 199 / 92%);
 	color: white;
@@ -47,10 +65,39 @@ nav a {
 	box-shadow: 4px 4px #808080fc
 }
 
-nav a:hover {
+.nav-button{
+	color: white;
+	background: rgb(51 110 199 / 92%);
+	border: 2px solid black;
+	display:none;
+	padding: 5px;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+/* Cuando el máximo sea 600, tomará nuevas propiedades */
+@media (max-width:600px){
+	nav{
+		flex-direction: column;
+	}
+
+	.nav-enlace{
+		margin:10px 0;
+		width: 100%;
+	}
+
+	.nav-button{
+		display: inline-block;
+	}
+
+	.desaparece{
+		display: none;
+	}
+}
+/* .nav-enlace a:hover {
 	background: green;
 	box-shadow: 0px;
-}
+}  */
 
 .imgPrinc {
 	width: 100%;
@@ -59,12 +106,12 @@ nav a:hover {
 
 .titulo {
 	text-align: center;
-	border: 1px solid;
+
 }
 
 main {
 	width: 100%;
-	height: 66.5em;
+	height: 67.3em;
 }
 
 .Logo {
@@ -83,7 +130,6 @@ main {
 li {
 	margin-top: 30px;
 	list-style: none;
-
 }
 
 p {
@@ -100,28 +146,26 @@ p {
 
 h2 {
 	text-align: center;
-	margin-top: 0em;
+	margin-top: 1em;
 }
 
 
 .LogoInf {
 	width: 35%;
-    height: 14em;
-    position: relative;
-    left: 34%;
-
+	height: 14em;
+	position: relative;
+	left: 34%;
 }
 
-.normal{
+.normal {
 	width: 90%;
 	margin: auto;
 	border: 1px solid #000;
-
 }
+
 table td {
 	width: 25%;
 	height: 2em;
-
 }
 
 table th {
@@ -129,12 +173,10 @@ table th {
 	width: 25%;
 	height: 2em;
 	border: 1px solid #000;
-
 }
 
 table tr {
 	background-color: rgb(138, 231, 135);
-
 }
 
 h4 {
@@ -170,12 +212,17 @@ section ul li {
 
 footer {
 	width: 100%;
-	height: 20.6em;
-	;
+	height: 24em;
 	background-image: url("Assets/estadio.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: white;
+}
+
+.EnlacesFooter{
+	display: flex;
+	justify-content: space-around;
+
 }
 
 footer h3 {
@@ -183,35 +230,36 @@ footer h3 {
 	padding-top: 1em;
 }
 
-footer ul li {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin: 3px;
+
+.anchorFoot:hover {
+	background: green;
+	box-shadow: 0px;
 }
 
-#EnlacesFooter a {
+.anchorFoot{
 	background: rgb(51 110 199 / 92%);
 	color: white;
-	width: 7em;
-	display: inline-block;
+	width: 8em;
 	text-decoration: none;
 	text-align: center;
 	border: 2px solid black;
 	box-shadow: 4px 4px #808080fc;
 	position: relative;
-	top: 5em;
+	top: 7em;
 	margin-inline: 137px;
+	display: inline-block;
+
 }
 
-
-#EnlacesFooter a:hover {
-	background: green;
-	box-shadow: 0px;
+.red-social {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: -3px;
 }
 
-#listaFoot a:hover {
+.red-social a:hover {
 	width: 3em;
 	height: 3em;
 	border-radius: 50%;
@@ -231,74 +279,103 @@ footer ul li {
 	background-repeat: no-repeat;
 	background-size: 40em;
 	background-position: 3em 11em;
-	margin:1em;
+	margin-left: 1em;
+	margin-right: 1em;
 	text-align: justify;
 }
 
-#mainRules h2{
+#mainRules h2 {
 	text-align: center;
 }
 
-#mainRules h3{
-	text-align:left;
+#mainRules h3 {
+	text-align: left;
 }
 
-#mainRules ol li{
+#mainRules ol li {
 	list-style-type: decimal-leading;
 	margin-left: 1em;
 }
 
-ol#listaOrdenada > li{
+ol#listaOrdenada>li {
 	list-style-type: lower-latin;
 
 }
-#final{
-	list-style:circle;
-    margin-left: 3em;
+
+#final {
+	list-style: circle;
+	margin-left: 3em;
 }
 
 
 /* REGISTRO */
 
-#bodyReg{
-    padding: 1rem;
-    background-color: rgb(154, 240, 115);
-    color: black;
-	font-weight:600;
-	font-size:large;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+#bodyReg {
+	padding: 1rem;
+	color: black;
+	font-weight: 600;
+	font-size: large;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
 
-form{
-    border: 2px solid white;
-    padding: 1rem;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
+form {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
 }
 
-fieldset{
-    padding: 0.5rem;
-    border-radius: 1rem;
+form h1 {
+	text-align: center;
 }
 
-legend{
-    padding: 0.2rem;
+fieldset {
+	padding: 0.5rem;
+	border: 3px solid gray;
 }
 
-iframe{
-    border-radius: 1rem;
-    border: 2px solid white;
-    margin: 1rem;
+legend {
+	padding: 0.2rem;
 }
 
-#scroll{
-	border:1px solid;
-	height:8vw;
-	width:100%;
-	overflow-y:scroll;
-	overflow-x:hidden;
+iframe {
+	border-radius: 1rem;
+	border: 2px solid white;
+	margin: 1rem;
+}
+
+#scroll {
+	border: 1px solid;
+	height: 12vw;
+	width: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#MainRegistation {
+	width: 100%;
+	height: 57.5em;
+}
+
+
+.input1{
+	width: 100%;
+}
+
+.input2{
+	width: 26%;
+}
+
+.enviarBoton{
+	width: 200px;
+	height: 30px;
+	background-color: green;
+	font-weight: bold;
+	font-size: 20px;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
 }

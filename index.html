@@ -11,74 +11,81 @@
 </head>
 
 <body>
-  <div id="ContenedorCentral">
 
+  <header>
 
-    <header>
+    <h1>Mighty Ducks Hockey League</h1>
 
-      <h1>Mighty Ducks Hockey League</h1>
+    <nav>
+      <button class="nav-button" onclick="accion()">Menu</button>
+      <a href="./index.html" class="nav-enlace desaparece">Home</a>
+      <a href="./about.html" class="nav-enlace desaparece">About</a>
+      <a href="./contact.html" class="nav-enlace desaparece">Contact</a>
+      <a href="./information.html" class="nav-enlace desaparece">Information</a>
+      <a href="./rules.html" class="nav-enlace desaparece">Rules</a>
+      <a href="./registration.html" class="nav-enlace desaparece">Registration</a>
+    </nav>
+    <script>
+      function accion() {
+        var ancla = document.getElementsByClassName('nav-enlace');
+        for (var i = 0; i < ancla.length; i++) {
+          ancla[i].classList.toggle('desaparece');
+        }
+      }
+    </script>
 
-      <nav>
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
-        <a href="./information.html">Information</a>
-        <a href="./rules.html">Rules</a>
-        <a href="./registration.html">Registration</a>
+    <img class="imgPrinc" src="Assets/image1.jpg" alt="imagen de hokey">
 
-      </nav>
+  </header>
 
-      <img class="imgPrinc" src="Assets/image1.jpg" alt="imagen de hokey">
+  <main>
 
-    </header>
+    <div class="titulo">
+      <h2>Upcoming Events</h2>
+    </div>
 
-    <main>
+    <img class="Logo" src="Assets/logo1.png" alt="logo empresa">
 
-      <div class="titulo">
-        <h2>Upcoming Events</h2>
-      </div>
+    <section>
 
-      <img class="Logo" src="Assets/logo1.png" alt="logo empresa">
+      <div id="Lista">
 
-      <section>
-
-        <div id="Lista">
-
-          <ul>
-
-            <li><b>August 4</b></li>
-            MDSL Fundraiser
-            <li><b>August 16</b></li>
-            Season Kick-off: Meet the Teams
-            <li><b>September 1</b></li>
-            First Game of the Season (Check Game Schedule for details)
-
-          </ul>
-        </div>
-      </section>
-    </main>
-    <hr>
-
-    <footer>
-      
-      <h3><b>Contact Us!</b></h3>
-      <h3><b>Please direct all questions to: Michael Randall, League Coordinator</b></h3>
-      <div id="EnlacesFooter">
-        <a href="tel:(630)690-8132">Call</a>
-        <a href="mailto:michaeI.randaII@mhihockey.org">Send Email</a>
-      </div>
-
-      <div id="listaFoot">
         <ul>
-          <li><a href="#"><img class="LogoRedes" src="Assets/face.png" alt="logo Facebook"></a></li>
-          <li><a href="#"><img class="LogoRedes" src="Assets/whats.png" alt="logo Whatsapp"></a></li>
-          <li><a href="#"><img class="LogoRedes" src="Assets/insta.png" alt="logo Instagran"></a></li>
-          <li><a href="#"><img class="LogoRedes" src="Assets/twiter.png" alt="logo Twiter"></a></li>
+
+          <li><b>August 4</b></li>
+          MDSL Fundraiser
+          <li><b>August 16</b></li>
+          Season Kick-off: Meet the Teams
+          <li><b>September 1</b></li>
+          First Game of the Season (Check Game Schedule for details)
+
         </ul>
       </div>
-    </footer>
+    </section>
+  </main>
+  <hr>
 
-  </div>
+  <footer>
+
+    <h2><b>Contact Us!</b></h2>
+    <h3>Please direct all questions to: Michael Randall, League Coordinator</h3>
+
+    <div class="EnlacesFooter">
+      <a href="tel:(630)690-8132" class="anchorFoot">Call</a>
+      <a href="mailto:michaeI.randaII@mhihockey.org" class="anchorFoot">Send Email</a>
+    </div>
+
+    <div class="box">
+      <h2>Follow Us !!!</h2>
+      <div class="red-social">
+        <a href="#"><img class="logo lo-face" src="Assets/face.png" alt="logo Facebook"></a>
+        <a href="#"><img class="logo lo-what" src="Assets/whats.png" alt="logo Whatsapp"></a>
+        <a href="#"><img class="logo lo-inst" src="Assets/insta.png" alt="logo Instagran"></a>
+        <a href="#"><img class="logo lo-twit" src="Assets/twiter.png" alt="logo Twiter"></a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 
 </html>
