@@ -11,292 +11,197 @@
 </head>
 
 <body>
-        <header>
-            <h1>Mighty Ducks Hockey League</h1>
+    <header>
+        <h1>Mighty Ducks Hockey League</h1>
 
-            <nav>
-                <button class="nav-button" onclick="accion()">Menu</button>
-                <a href="./index.html" class="nav-enlace desaparece">Home</a>
-                <a href="./about.html" class="nav-enlace desaparece">About</a>
-                <a href="./contact.html" class="nav-enlace desaparece">Contact</a>
-                <a href="./information.html" class="nav-enlace desaparece">Information</a>
-                <a href="./rules.html" class="nav-enlace desaparece">Rules</a>
-                <a href="./registration.html" class="nav-enlace desaparece">Registration</a>
-            </nav>
-            <script>
-                function accion(){
-                    var ancla = document.getElementsByClassName('nav-enlace');
-                    for(var i=0;i < ancla.length;i++){
-                        ancla[i].classList.toggle('desaparece');
-                    }
+        <nav>
+            <button class="nav-button" onclick="accion()">Menu</button>
+            <a href="./index.html" class="nav-enlace desaparece">Home</a>
+            <a href="./about.html" class="nav-enlace desaparece">About</a>
+            <a href="./contact.html" class="nav-enlace desaparece">Contact</a>
+            <a href="./information.html" class="nav-enlace desaparece">Information</a>
+            <a href="./rules.html" class="nav-enlace desaparece">Rules</a>
+            <a href="./registration.html" class="nav-enlace desaparece">Registration</a>
+        </nav>
+        <script>
+            function accion() {
+                var ancla = document.getElementsByClassName('nav-enlace');
+                for (var i = 0; i < ancla.length; i++) {
+                    ancla[i].classList.toggle('desaparece');
                 }
-            </script>
+            }
+        </script>
 
-            <img class="imgPrinc" src="Assets/image1.jpg" alt="imagen de hokey">
+        <img class="imgPrinc" src="Assets/image1.jpg" alt="imagen de hokey">
 
-        </header>
+    </header>
 
-        <main>
+    <main>
 
-            <img class="LogoInf" src="Assets/logo1.png" alt="logo empresa">
+        <img class="LogoInf" src="Assets/logo1.png" alt="logo empresa">
 
+        <table class="normal">
 
-            <table  class="normal">
-                <tr>
-                    <td style="border: 1px solid" colspan="4">
-                        <h4>SCHEDULE</h4>
-                    </td>
+            <tr>
+                <td style="border: 1px solid" colspan="4">
+                    <h4>SCHEDULE</h4>
+                </td>
+            </tr>
+            <tr>
+                <th> SEPTEMBER </th>
+                <th> TEAMS </th>
+                <th> LOCATION </th>
+                <th> TIMES </th>
+            </tr>
 
-                </tr>
-                <tr>
-                    <th> SEPTEMBER </th>
-                    <th> TEAMS </th>
-                    <th> LOCATION </th>
-                    <th> TIMES </th>
-                </tr>
+            <tr>
+                <td rowspan="2"> 9/01 </td>
+                <td> U1 and U4 </td>
+                <td><p class="escuela">AJ Katzenmaier</p>
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11799.122572613156!2d-87.8628046!3d42.3258772!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf2bbe275c6da815!2sAJ%20Katzenmaier%20Academy!5e0!3m2!1ses-419!2sar!4v1675958065902!5m2!1ses-419!2sar"
+                        width="60" height="60" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td> 9:30 a.m </td>
+            </tr>
 
-                <tr>
-                    <td> 9/01 </td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td> U1 and U4 </td>
-                            </tr>
-                            <tr>
-                                <td> U3 and U2 </td>
-                            </tr>
+            <tr>
+                <td> U3 and U2 </td>
+                <td><p class="escuela">Greenbay</p>
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.010604115181!2d-87.8710703851791!3d42.3209725791894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f933bce5af881%3A0x740a7a7d548adce1!2sGreen%20Bay%20School%20(Pre-K)!5e0!3m2!1ses-419!2sar!4v1675963530643!5m2!1ses-419!2sar"
+                        width="60" height="60" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td> 1:00 p.m </td>
 
-                        </table>
-                    </td>
+            </tr>
 
-                    <td>
-                        <table>
-                            <tr>
-                                <td> AJ Katzenmaier </td>
-                            </tr>
-                            <tr>
-                                <td> Greenbay </td>
-                            </tr>
+            <tr>
+                <td rowspan="2"> 9/08 </td>
+                <td> U5 and U6 </td>
+                <td><p class="escuela">Howard A Yeager</p>
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.2700626313863!2d-87.85606978517932!3d42.31543827918992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880feccac26b07c5%3A0x8b51fa5d6efe771a!2sHoward%20A.%20Yeager%20School%20(PREK-K)!5e0!3m2!1ses-419!2sar!4v1675963626840!5m2!1ses-419!2sar"
+                        width="60" height="60" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td> 9:30 a.m </td>
+            </tr>
 
-                        </table>
-                    </td>
+            <tr>
+                <td> U6 and U1 </td>
+                <td><p class="escuela">Marjorie P Hart</p>
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d378756.9223962305!2d-88.02602439859373!3d42.128059959382725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e1!4m0!4m5!1s0x880fecd0628e1bb5%3A0x9a4d5f9aafd42e02!2sMarjorie%20P%20Hart%20School%2C%20North%20Chicago%2C%20IL%2060064%2C%20Estados%20Unidos!3m2!1d42.327095899999996!2d-87.84568999999999!5e0!3m2!1ses-419!2sar!4v1675963741723!5m2!1ses-419!2sar"
+                        width="60" height="60" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td> 1:00 p.m </td>
+            </tr>
 
-                    <td>
-                        <table>
-                            <tr>
-                                <td> 9:30 a.m </td>
-                            </tr>
-                            <tr>
-                                <td> 1:00 p.m </td>
-                            </tr>
+            <tr>
+                <td rowspan="2"> 9/15 </td>
+                <td> U2 and U4 </td>
+                <td><p class="escuela">North</p>
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d378760.99807730434!2d-88.02602731334588!3d42.127378286420615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e1!4m0!4m5!1s0x880fed60b13aa0a7%3A0xfe6df83b0f197ed6!2sNorth%20Elementary%20School%2C%20410%20Franklin%20St%2C%20Waukegan%2C%20IL%2060085%2C%20Estados%20Unidos!3m2!1d42.368956999999995!2d-87.834445!5e0!3m2!1ses-419!2sar!4v1675963926595!5m2!1ses-419!2sar"
+                        width="60" height="60" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td> 9:30 a.m </td>
+            </tr>
 
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td> 9/08 </td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td> U5 and U6 </td>
-                            </tr>
-                            <tr>
-                                <td> U6 and U1 </td>
-                            </tr>
+            <tr>
+                <td> U3 and U5 </td>
+                <td><p class="escuela">AJ Katzenmaier</p>
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11799.122572613156!2d-87.8628046!3d42.3258772!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf2bbe275c6da815!2sAJ%20Katzenmaier%20Academy!5e0!3m2!1ses-419!2sar!4v1675958065902!5m2!1ses-419!2sar"
+                        width="60" height="60" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td> 1:00 p.m </td>
+            </tr>
 
-                        </table>
-                    </td>
+            <tr>
+                <td rowspan="2"> 9/22 </td>
+                <td> U1 and U3 </td>
+                <td><p class="escuela">South</p>
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2954.386573786651!2d-88.34398968518298!3d42.22755357919602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f6d4a6d2e1093%3A0xdea3c745e6bb6aa0!2sSouth%20Elementary%20School!5e0!3m2!1ses-419!2sar!4v1675963985671!5m2!1ses-419!2sar"
+                        width="60" height="60" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td> 9:30 a.m </td>
+            </tr>
 
-                    <td>
-                        <table>
-                            <tr>
-                                <td> Howard A Yeager </td>
-                            </tr>
-                            <tr>
-                                <td> Marjorie P Hart </td>
-                            </tr>
+            <tr>
+                <td> U2 and U6 </td>
+                <td><p class="escuela">Howard A Yeager</p>
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.2700626313863!2d-87.85606978517932!3d42.31543827918992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880feccac26b07c5%3A0x8b51fa5d6efe771a!2sHoward%20A.%20Yeager%20School%20(PREK-K)!5e0!3m2!1ses-419!2sar!4v1675963626840!5m2!1ses-419!2sar"
+                        width="60" height="60" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td> 1:00 p.m </td>
+            </tr>
 
-                        </table>
-                    </td>
-
-                    <td>
-                        <table>
-                            <tr>
-                                <td> 9:30 a.m </td>
-                            </tr>
-                            <tr>
-                                <td> 1:00 p.m </td>
-                            </tr>
-
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td> 9/15 </td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td> U2 and U4 </td>
-                            </tr>
-                            <tr>
-                                <td> U3 and U5 </td>
-                            </tr>
-
-                        </table>
-                    </td>
-
-                    <td>
-                        <table>
-                            <tr>
-                                <td> North </td>
-                            </tr>
-                            <tr>
-                                <td> AJ Katzenmaier </td>
-                            </tr>
-
-                        </table>
-                    </td>
-
-                    <td>
-                        <table>
-                            <tr>
-                                <td> 9:30 a.m </td>
-                            </tr>
-                            <tr>
-                                <td> 1:00 p.m </td>
-                            </tr>
-
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td> 9/22 </td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td> U1 and U3 </td>
-                            </tr>
-                            <tr>
-                                <td> U2 and U6 </td>
-                            </tr>
-
-                        </table>
-                    </td>
-
-                    <td>
-                        <table>
-                            <tr>
-                                <td> South </td>
-                            </tr>
-                            <tr>
-                                <td> Howard A Yeager </td>
-                            </tr>
-
-                        </table>
-                    </td>
-
-                    <td>
-                        <table>
-                            <tr>
-                                <td> 9:30 a.m </td>
-                            </tr>
-                            <tr>
-                                <td> 1:00 p.m </td>
-                            </tr>
-
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td> 9/29 </td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td> U4 and U5 </td>
-                            </tr>
+            <tr>
+                <td> 9/29 </td>
+                <td> U4 and U5 </td>
+                <td><p class="escuela">Greenbay</p>
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.010604115181!2d-87.8710703851791!3d42.3209725791894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f933bce5af881%3A0x740a7a7d548adce1!2sGreen%20Bay%20School%20(Pre-K)!5e0!3m2!1ses-419!2sar!4v1675963530643!5m2!1ses-419!2sar"
+                        width="60" height="60" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td> 9:30 a.m </td>
+            </tr>
+        </table>
 
 
-                        </table>
-                    </td>
-
-                    <td>
-                        <table>
-                            <tr>
-                                <td> Greenbay </td>
-                            </tr>
-
-                        </table>
-                    </td>
-
-                    <td>
-                        <table>
-                            <tr>
-                                <td> 9:30 a.m </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-
-            <section>
-                <img class="imgMensaje" src="Assets/readMe.png" alt="imagen de mensaje">
-                <img class="imgFlecha" src="Assets/flecha.png" alt="imagen de flecha">
-                <ul>
-                   <li><b>All games</b> place on Saturday.</li>
-                   <li><b>Facility Type:</b>Outdoor</li>
-                   <li><b>Additional Information:</b> If deemed necessary by MDHL games may be shortened or cancelled due to
+        <section>
+           <div class="imagenesInfo">
+            <img class="imgMensaje" src="Assets/readMe.png" alt="imagen de mensaje">
+           </div>
+           <div class="imagenesInfo">
+            <img class="imgFlecha" src="Assets/flecha.png" alt="imagen de flecha">
+           </div>
+            <ul>
+                <li><b>All games</b> place on Saturday.</li>
+                <li><b>Facility Type:</b>Outdoor</li>
+                <li><b>Additional Information:</b> If deemed necessary by MDHL games may be shortened or cancelled due
+                    to
                     extreme weather conditions.</li>
-                </ul>
+            </ul>
 
-            </section>
+        </section>
 
-  
-            <h2>Mapa</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26327.99294963738!2d-58.59335468438603!3d-34.426777503511666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5a2d0ddb9b1%3A0x2c1a974c67cba1e4!2sTigre%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1675451636144!5m2!1ses!2sar"
-                width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <h2>Casados con hijos</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/BE1wdWbSqAU?start=1171"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <h2>Twitt de la semana</h2>
-            <blockquote class="twitter-tweet">
-                <p lang="es" dir="ltr">El Pentágono asegura que es probable que el globo espía de China sobrevuele por Estados
-                    Unidos durante varios días 🙃<a href="https://t.co/SI8nDSPKvx">pic.twitter.com/SI8nDSPKvx</a></p>&mdash;
-                Emmanuel Rincón (@EmmaRincon) <a
-                    href="https://twitter.com/EmmaRincon/status/1621589153593843715?ref_src=twsrc%5Etfw">February 3, 2023</a>
-            </blockquote>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <h2>Dia de pezca</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d84719.98497691241!2d-74.20184079995813!3d20.211928970876368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1675452242222!5m2!1ses!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </main>
+    </main>
 
-        <footer>
+    <footer>
 
-            <h2><b>Contact Us!</b></h2>
-            <h3>Please direct all questions to: Michael Randall, League Coordinator</h3>
-        
-            <div class="EnlacesFooter">
-              <a href="tel:(630)690-8132" class="anchorFoot">Call</a>
-              <a href="mailto:michaeI.randaII@mhihockey.org" class="anchorFoot">Send Email</a>
-            </div>
-        
-            <div class="box">
-              <h2>Follow Us !!!</h2>
-              <div class="red-social">
+        <h2><b>Contact Us!</b></h2>
+        <h3>Please direct all questions to: Michael Randall, League Coordinator</h3>
+
+        <div class="EnlacesFooter">
+            <a href="tel:(630)690-8132" class="anchorFoot">Call</a>
+            <a href="mailto:michaeI.randaII@mhihockey.org" class="anchorFoot">Send Email</a>
+        </div>
+
+        <div class="box">
+            <h2>Follow Us !!!</h2>
+            <div class="red-social">
                 <a href="#"><img class="logo lo-face" src="Assets/face.png" alt="logo Facebook"></a>
                 <a href="#"><img class="logo lo-what" src="Assets/whats.png" alt="logo Whatsapp"></a>
                 <a href="#"><img class="logo lo-inst" src="Assets/insta.png" alt="logo Instagran"></a>
                 <a href="#"><img class="logo lo-twit" src="Assets/twiter.png" alt="logo Twiter"></a>
-              </div>
             </div>
-          </footer>
+        </div>
+    </footer>
 
- 
+
 </body>
 
 </html>
